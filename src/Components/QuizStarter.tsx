@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Quiz from "../Utils/quizzes";
+import Quiz from "../Utils/quizzes.json";
 import ScoreDisplay from "./ScoreDisplay";
 const QuizStarter = ({
   quizId,
@@ -8,7 +8,7 @@ const QuizStarter = ({
   quizId: number;
   setSelectedQuiz: React.Dispatch<React.SetStateAction<number>>;
 }) => {
-  const quiz = Quiz.filter((quiz) => quiz.id === quizId)[0];
+  const quiz = Quiz.filter((quiz: any) => quiz.id === quizId)[0];
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const getQuestions = () => {
@@ -22,7 +22,7 @@ const QuizStarter = ({
     const currentQuestion = questions[currentQuestionIndex];
     return currentQuestion.options;
   };
-  const checkQuestion = (options) => {
+  const checkQuestion = (options: any) => {
     if (currentQuestionIndex >= quiz.questions.length - 1) {
       return;
     } else {
@@ -54,7 +54,7 @@ const QuizStarter = ({
             </div>
             <span className="font-bold text-2xl">{getQuestions()}</span>
             <div className="w-full min-h-[40%] h-auto grid grid-cols-2 grid-rows-2 gap-6 justify-center items-center p-4 place-items-center">
-              {getOptions().map((option) => (
+              {getOptions().map((option: any) => (
                 <button
                   className="min-h-[100px] md:min-h-[200px]  w-full h-full bg-slate-200 border-4 rounded-md border-blue-400 hover:bg-blue-400 duration-500"
                   key={option.id}

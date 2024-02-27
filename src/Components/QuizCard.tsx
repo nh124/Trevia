@@ -2,6 +2,7 @@ const QuizCard = ({
   quiz,
   setSelectedQuiz
 }: {
+  quiz: any;
   setSelectedQuiz: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   return (

@@ -21,6 +21,7 @@ const AnswerInputComponent = ({
   choice: Answer;
   question: QuizItem;
 }) => {
+  console.log(choice);
   return (
     <div className="flex flex-row items-center gap-3 w-full">
       <div className="flex flex-row gap-5 items-center w-full">

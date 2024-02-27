@@ -1,5 +1,5 @@
 import { useState } from "react";
-import QuestionComponent from "./QuestionComponent";
+// import QuestionComponent from "./QuestionComponent";
 
 const Question = () => {
   type options = {
@@ -19,22 +19,22 @@ const Question = () => {
 
   const addQuestion = () => {
     const currentQuiz = [...quiz];
-    const newQuiz = {
-      question: "",
-      answers: ["", ""]
-    };
-    currentQuiz.push(newQuiz);
+    // const newQuiz = {
+    //   question: "",
+    //   answers: ["", ""]
+    // };
+    // currentQuiz.push(newQuiz);
     setQuiz(currentQuiz);
     setQuestion([...question, ""]);
   };
 
-  const deleteQuestion = () => {
-    if (question.length > 1) {
-      const newQuestion = [...question];
-      newQuestion.pop();
-      setQuestion(newQuestion);
-    }
-  };
+  // const deleteQuestion = () => {
+  //   if (question.length > 1) {
+  //     const newQuestion = [...question];
+  //     newQuestion.pop();
+  //     setQuestion(newQuestion);
+  //   }
+  // };
   return (
     <div className="flex flex-col gap-3 items-end overflow-y-auto">
       <button

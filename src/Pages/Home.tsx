@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import SearchComponent from "../Components/SearchComponent";
 import QuizCard from "../Components/QuizCard";
 import CreateQuiz from "../Components/CreateQuiz";
@@ -10,7 +9,7 @@ const Home = () => {
   const [selectedQuiz, setSelectedQuiz] = useState(0);
   const [search, setSearch] = useState("");
 
-  const setSearchValue = (event) => {
+  const setSearchValue = (event: any) => {
     setSearch(event.target.value);
   };
 

@@ -12,7 +12,7 @@ const SearchComponent = ({
           <CiSearch size={22} color="#97a2b2" />
         </div>
         <input
-          onChange={(event) => setSearchValue(event)}
+          onChange={(event: any) => setSearchValue(event)}
           type="text"
           className="pl-11 w-full relative m-0 block min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)]  dark:focus:border-primary"
           placeholder="Search Trevia"
