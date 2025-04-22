@@ -45,7 +45,7 @@ export default {
         },
         flash: {
           "0%": { backgroundColor: "white" },
-          "50%": { backgroundColor: "black" },
+          "50%": { backgroundColor: "#34D399" },
           "100%": { backgroundColor: "white" }
         }
       },

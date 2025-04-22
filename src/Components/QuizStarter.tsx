@@ -22,10 +22,14 @@ const QuizStarter = ({
   setSelectedQuiz: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   const quiz = Quiz.find((q: any) => q.id === quizId)!;
-  const questions = useMemo(
-    () => shuffleArray(quiz.questions),
-    [quiz.questions]
-  );
+  const questions = useMemo(() => {
+    return shuffleArray(
+      quiz.questions.map((q: any) => ({
+        ...q,
+        options: shuffleArray(q.options)
+      }))
+    );
+  }, [quiz.questions]);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -104,7 +108,11 @@ const QuizStarter = ({
             key={opt.id}
             className={`min-h-[100px] md:min-h-[200px] w-full rounded-md border-4 
                       ${opt.is_correct ? "border-green-500" : "border-red-500"} 
-                      bg-slate-200 hover:bg-blue-400 transition-colors duration-200`}
+                      bg-slate-200 hover:bg-blue-400 transition-colors duration-200 ${
+                        isCorrect !== null &&
+                        opt.is_correct &&
+                        "animate-flashAnimation"
+                      }`}
             onClick={() => checkQuestion(opt)}
             disabled={isCorrect !== null}
           >
