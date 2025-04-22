@@ -1,6 +1,19 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Quiz from "../Utils/quizzes.json";
 import ScoreDisplay from "./ScoreDisplay";
+import Lottie from "lottie-react";
+import correctAnim from "../assets/lottie/correct.json";
+import wrongAnim from "../assets/lottie/wrong.json";
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 const QuizStarter = ({
   quizId,
   setSelectedQuiz
@@ -8,66 +21,98 @@ const QuizStarter = ({
   quizId: number;
   setSelectedQuiz: React.Dispatch<React.SetStateAction<number>>;
 }) => {
-  const quiz = Quiz.filter((quiz: any) => quiz.id === quizId)[0];
+  const quiz = Quiz.find((q: any) => q.id === quizId)!;
+  const questions = useMemo(
+    () => shuffleArray(quiz.questions),
+    [quiz.questions]
+  );
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
-  const getQuestions = () => {
-    const questions = quiz.questions;
-    const currentQuestion = questions[currentQuestionIndex];
-    return currentQuestion.question;
+
+  // null = unanswered, true/false = show feedback
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const currentQuestion = questions[currentQuestionIndex];
+
+  const checkQuestion = (option: any) => {
+    // ignore extra clicks while feedback is showing
+    if (isCorrect !== null) return;
+
+    const correct = option.is_correct;
+    if (correct) setScore((s) => s + 1);
+
+    // trigger feedback
+    setIsCorrect(correct);
+
+    // after 1s, clear feedback & advance
+    setTimeout(() => {
+      setIsCorrect(null);
+      setCurrentQuestionIndex((idx) =>
+        idx >= questions.length - 1 ? idx : idx + 1
+      );
+    }, 1500);
   };
 
-  const getOptions = () => {
-    const questions = quiz.questions;
-    const currentQuestion = questions[currentQuestionIndex];
-    return currentQuestion.options;
-  };
-  const checkQuestion = (options: any) => {
-    if (currentQuestionIndex >= quiz.questions.length - 1) {
-      return;
-    } else {
-      if (options.is_correct) setScore(score + 1);
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    }
-  };
+  // if we're at last question, render score
+  if (currentQuestionIndex >= questions.length - 1) {
+    return (
+      <ScoreDisplay score={score * 10} setSelectedQuiz={setSelectedQuiz} />
+    );
+  }
+
   return (
-    <>
-      {currentQuestionIndex >= quiz.questions.length - 1 ? (
-        <ScoreDisplay score={score * 10} setSelectedQuiz={setSelectedQuiz} />
-      ) : (
-        <div className="absolute top-0 left-0 w-full min-h-[100dvh] h-auto bg-white z-20 flex flex-col justify-center items-center gap-10 animate-fadeAnimation">
-          <div className="flex flex-col gap-10 justify-center items-center md:w-[50%] text-center w-full h-full">
-            <div className="w-full h-[10%] flex flex-row justify-center items-center gap-3 p-7">
-              <div className="w-[60%] h-[20px] relative flex items-center bg-slate-200 rounded-full overflow-hidden">
-                <div
-                  className="absolute top-0 h-full bg-blue-400 rounded-full duration-300"
-                  style={{
-                    width: `${
-                      ((currentQuestionIndex + 1) / quiz.questions.length) * 100
-                    }%`
-                  }}
-                ></div>
-              </div>
-              <span className="text-lg font-semibold">
-                {currentQuestionIndex + 1}/{quiz.questions.length}
-              </span>
-            </div>
-            <span className="font-bold text-2xl">{getQuestions()}</span>
-            <div className="w-full min-h-[40%] h-auto grid grid-cols-2 grid-rows-2 gap-6 justify-center items-center p-4 place-items-center">
-              {getOptions().map((option: any) => (
-                <button
-                  className="min-h-[100px] md:min-h-[200px]  w-full h-full bg-slate-200 border-4 rounded-md border-blue-400 hover:bg-blue-400 duration-500"
-                  key={option.id}
-                  onClick={() => checkQuestion(option)}
-                >
-                  {option.choice}
-                </button>
-              ))}
-            </div>
-          </div>
+    <div className="absolute inset-0 bg-white z-20 flex flex-col items-center justify-center gap-10 animate-fadeAnimation">
+      {/* progress + feedback */}
+      <div className="relative flex items-center justify-between w-[50%] p-7">
+        {/* progress bar */}
+        <div className="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden mr-4">
+          <div
+            className="h-full bg-blue-400 rounded-full transition-width duration-300"
+            style={{
+              width: `${((currentQuestionIndex + 1) / questions.length) * 100}%`
+            }}
+          />
         </div>
-      )}
-    </>
+
+        {/* counter */}
+        <span className="text-xl font-bold">
+          {currentQuestionIndex + 1}/{questions.length}
+        </span>
+
+        {/* feedback indicator */}
+        {isCorrect !== null && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-20">
+            <Lottie
+              animationData={isCorrect ? correctAnim : wrongAnim}
+              loop={false}
+              style={{ width: 40, height: 40 }}
+            />
+          </div>
+        )}
+      </div>
+
+      {/* question */}
+      <p className="text-2xl font-bold text-center px-4">
+        {currentQuestion.question}
+      </p>
+
+      {/* options grid */}
+      <div className="grid grid-cols-2 gap-6 w-full md:w-1/2 p-4">
+        {currentQuestion.options.map((opt: any) => (
+          <button
+            key={opt.id}
+            className={`min-h-[100px] md:min-h-[200px] w-full rounded-md border-4 
+                      ${opt.is_correct ? "border-green-500" : "border-red-500"} 
+                      bg-slate-200 hover:bg-blue-400 transition-colors duration-200`}
+            onClick={() => checkQuestion(opt)}
+            disabled={isCorrect !== null}
+          >
+            {opt.choice}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 };
 

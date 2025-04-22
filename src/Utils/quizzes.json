@@ -1651,5 +1651,1435 @@
         ]
       }
     ]
+  },
+  {
+    "id": 21,
+    "name": "Star Wars: The Rise of Skywalker",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the desert planet where the search for Emperor Palpatine begins?",
+        "options": [
+          { "choice": "Exegol", "is_correct": false },
+          { "choice": "Jakku", "is_correct": false },
+          { "choice": "Tatooine", "is_correct": false },
+          { "choice": "Pasaana", "is_correct": true }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Who is revealed to be Rey's grandfather in 'The Rise of Skywalker'?",
+        "options": [
+          { "choice": "Emperor Palpatine", "is_correct": true },
+          { "choice": "Darth Vader", "is_correct": false },
+          { "choice": "Obi-Wan Kenobi", "is_correct": false },
+          { "choice": "Snoke", "is_correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What is the name of the Sith loyalists who inhabit the Sith world of Exegol?",
+        "options": [
+          { "choice": "Sith Eternal", "is_correct": true },
+          { "choice": "Knights of Ren", "is_correct": false },
+          { "choice": "First Order", "is_correct": false },
+          { "choice": "The Resistance", "is_correct": false }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Who delivers the final blow to Emperor Palpatine?",
+        "options": [
+          { "choice": "Rey", "is_correct": true },
+          { "choice": "Kylo Ren", "is_correct": false },
+          { "choice": "Finn", "is_correct": false },
+          { "choice": "Leia Organa", "is_correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What color is Rey's lightsaber at the end of the film?",
+        "options": [
+          { "choice": "Yellow", "is_correct": true },
+          { "choice": "Blue", "is_correct": false },
+          { "choice": "Green", "is_correct": false },
+          { "choice": "Purple", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "HTTP Status Codes",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does HTTP status code 100 mean?",
+        "options": [
+          {
+            "choice": "Continue – the client should continue its request",
+            "is_correct": true
+          },
+          {
+            "choice": "Processing – the server has received and is processing the request",
+            "is_correct": false
+          },
+          { "choice": "OK – the request has succeeded", "is_correct": false },
+          {
+            "choice": "Switching Protocols – the server is switching to the protocol requested",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What does HTTP status code 101 mean?",
+        "options": [
+          {
+            "choice": "Switching Protocols – the server is switching to the protocol requested",
+            "is_correct": true
+          },
+          {
+            "choice": "Continue – the client should continue its request",
+            "is_correct": false
+          },
+          {
+            "choice": "Created – the request has succeeded and a new resource was created",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – the server could not understand the request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What does HTTP status code 102 mean?",
+        "options": [
+          {
+            "choice": "Processing – server has received and is processing the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Early Hints – preliminary response to speed up resource loading",
+            "is_correct": false
+          },
+          {
+            "choice": "Non-Authoritative Information – the returned meta-information is from a local copy",
+            "is_correct": false
+          },
+          {
+            "choice": "Reset Content – server successfully processed request; client should reset view",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What does HTTP status code 103 mean?",
+        "options": [
+          {
+            "choice": "Early Hints – server is likely to send final response after the hints",
+            "is_correct": true
+          },
+          {
+            "choice": "Processing – server is processing in background",
+            "is_correct": false
+          },
+          {
+            "choice": "Multiple Choices – several options for the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Partial Content – server is delivering only part of the resource",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What does HTTP status code 200 mean?",
+        "options": [
+          { "choice": "OK – the request has succeeded", "is_correct": true },
+          {
+            "choice": "Accepted – request has been accepted for processing",
+            "is_correct": false
+          },
+          {
+            "choice": "No Content – server successfully processed request; no content to return",
+            "is_correct": false
+          },
+          {
+            "choice": "Created – request has succeeded and a new resource was created",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What does HTTP status code 201 mean?",
+        "options": [
+          {
+            "choice": "Created – request has succeeded and created a new resource",
+            "is_correct": true
+          },
+          {
+            "choice": "No Content – server processed request; no content to return",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          },
+          {
+            "choice": "Moved Permanently – resource has been permanently moved",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What does HTTP status code 202 mean?",
+        "options": [
+          {
+            "choice": "Accepted – request has been accepted for processing, but not completed",
+            "is_correct": true
+          },
+          {
+            "choice": "Non-Authoritative Information – meta-information from a local copy",
+            "is_correct": false
+          },
+          {
+            "choice": "Reset Content – server processed request; client should reset view",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server understood request but refuses to authorize it",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What does HTTP status code 203 mean?",
+        "options": [
+          {
+            "choice": "Non-Authoritative Information – meta-information is from a local or third-party copy",
+            "is_correct": true
+          },
+          {
+            "choice": "Partial Content – server is delivering part of the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Already Reported – members of DAV binding reported already",
+            "is_correct": false
+          },
+          {
+            "choice": "Switching Protocols – server is switching protocols",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "What does HTTP status code 204 mean?",
+        "options": [
+          {
+            "choice": "No Content – server processed request; no content to return",
+            "is_correct": true
+          },
+          {
+            "choice": "Reset Content – server processed request; client should reset view",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Modified – resource has not been modified since last request",
+            "is_correct": false
+          },
+          { "choice": "OK – the request has succeeded", "is_correct": false }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What does HTTP status code 205 mean?",
+        "options": [
+          {
+            "choice": "Reset Content – server processed request; client should reset view",
+            "is_correct": true
+          },
+          {
+            "choice": "No Content – server processed request; no content to return",
+            "is_correct": false
+          },
+          {
+            "choice": "Partial Content – server is delivering part of the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Conflict – request could not be completed due to conflict",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "What does HTTP status code 206 mean?",
+        "options": [
+          {
+            "choice": "Partial Content – server is delivering part of the resource",
+            "is_correct": true
+          },
+          {
+            "choice": "Multi-Status – multiple separate responses",
+            "is_correct": false
+          },
+          {
+            "choice": "Early Hints – preliminary response to speed up loading",
+            "is_correct": false
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses to accept request body format",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "What does HTTP status code 207 mean?",
+        "options": [
+          {
+            "choice": "Multi-Status – multiple separate responses in a single message",
+            "is_correct": true
+          },
+          {
+            "choice": "Already Reported – members of DAV binding reported already",
+            "is_correct": false
+          },
+          {
+            "choice": "Processing – server is processing request",
+            "is_correct": false
+          },
+          {
+            "choice": "Im Used – server has fulfilled a GET request for the resource",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "What does HTTP status code 208 mean?",
+        "options": [
+          {
+            "choice": "Already Reported – members of DAV binding have already been enumerated",
+            "is_correct": true
+          },
+          {
+            "choice": "IM Used – server has fulfilled a GET request for the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Loop Detected – server detected an infinite loop",
+            "is_correct": false
+          },
+          {
+            "choice": "Early Hints – preliminary response",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "What does HTTP status code 226 mean?",
+        "options": [
+          {
+            "choice": "IM Used – server has fulfilled a GET request for the resource",
+            "is_correct": true
+          },
+          {
+            "choice": "Already Reported – members of DAV binding reported already",
+            "is_correct": false
+          },
+          {
+            "choice": "Partial Content – server is delivering part of the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Upgrade Required – client should switch to a different protocol",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "What does HTTP status code 300 mean?",
+        "options": [
+          {
+            "choice": "Multiple Choices – there are multiple options for the resource",
+            "is_correct": true
+          },
+          {
+            "choice": "Moved Permanently – resource has been permanently moved",
+            "is_correct": false
+          },
+          {
+            "choice": "See Other – client should retrieve resource from another URI",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Modified – resource has not been modified",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "What does HTTP status code 301 mean?",
+        "options": [
+          {
+            "choice": "Moved Permanently – resource has been permanently moved to a new URI",
+            "is_correct": true
+          },
+          {
+            "choice": "Found – resource resides temporarily under a different URI",
+            "is_correct": false
+          },
+          {
+            "choice": "See Other – client should use GET on another URI",
+            "is_correct": false
+          },
+          {
+            "choice": "Temporary Redirect – resource resides temporarily under a different URI",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "What does HTTP status code 302 mean?",
+        "options": [
+          {
+            "choice": "Found – resource resides temporarily under a different URI",
+            "is_correct": true
+          },
+          {
+            "choice": "Moved Permanently – resource has been permanently moved",
+            "is_correct": false
+          },
+          {
+            "choice": "See Other – client should retrieve resource from another URI",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Modified – resource has not been modified",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "What does HTTP status code 303 mean?",
+        "options": [
+          {
+            "choice": "See Other – client should retrieve resource using GET at another URI",
+            "is_correct": true
+          },
+          {
+            "choice": "Found – resource resides temporarily under a different URI",
+            "is_correct": false
+          },
+          {
+            "choice": "Use Proxy – client should use a proxy to access the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Modified – resource has not been modified",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "What does HTTP status code 304 mean?",
+        "options": [
+          {
+            "choice": "Not Modified – resource has not been modified since last request",
+            "is_correct": true
+          },
+          {
+            "choice": "No Content – server processed request; no content to return",
+            "is_correct": false
+          },
+          {
+            "choice": "Multiple Choices – there are multiple options for the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Temporary Redirect – resource resides temporarily elsewhere",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "What does HTTP status code 305 mean?",
+        "options": [
+          {
+            "choice": "Use Proxy – requested resource must be accessed through the proxy given by Location",
+            "is_correct": true
+          },
+          {
+            "choice": "Temporary Redirect – resource resides temporarily under a different URI",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          },
+          {
+            "choice": "Multiple Choices – there are multiple options for the resource",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "question": "What does HTTP status code 306 mean?",
+        "options": [
+          {
+            "choice": "(Unused) – no longer used, but reserved",
+            "is_correct": true
+          },
+          {
+            "choice": "Switching Protocols – server is switching protocols",
+            "is_correct": false
+          },
+          {
+            "choice": "Processing – server is processing request",
+            "is_correct": false
+          },
+          {
+            "choice": "Already Reported – members of DAV binding reported already",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "question": "What does HTTP status code 307 mean?",
+        "options": [
+          {
+            "choice": "Temporary Redirect – resource resides temporarily under a different URI; method not changed",
+            "is_correct": true
+          },
+          {
+            "choice": "Found – resource resides temporarily under a different URI; may change method",
+            "is_correct": false
+          },
+          {
+            "choice": "Permanent Redirect – resource has been permanently moved",
+            "is_correct": false
+          },
+          {
+            "choice": "See Other – client should use GET on another URI",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "question": "What does HTTP status code 308 mean?",
+        "options": [
+          {
+            "choice": "Permanent Redirect – resource has been permanently moved; method not changed",
+            "is_correct": true
+          },
+          {
+            "choice": "Moved Permanently – resource has been permanently moved; method may change",
+            "is_correct": false
+          },
+          {
+            "choice": "Temporary Redirect – resource resides temporarily elsewhere",
+            "is_correct": false
+          },
+          {
+            "choice": "See Other – client should use GET on another URI",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "question": "What does HTTP status code 400 mean?",
+        "options": [
+          {
+            "choice": "Bad Request – server could not understand the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Unauthorized – authentication is required",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server understood request but refuses to authorize",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Found – resource could not be found",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "question": "What does HTTP status code 401 mean?",
+        "options": [
+          {
+            "choice": "Unauthorized – authentication is required and has failed or not yet provided",
+            "is_correct": true
+          },
+          {
+            "choice": "Forbidden – server understood request but refuses to authorize",
+            "is_correct": false
+          },
+          {
+            "choice": "Payment Required – reserved for future use",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand the request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "question": "What does HTTP status code 402 mean?",
+        "options": [
+          {
+            "choice": "Payment Required – reserved for future use",
+            "is_correct": true
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          },
+          {
+            "choice": "Conflict – request could not be completed due to conflict",
+            "is_correct": false
+          },
+          {
+            "choice": "Too Many Requests – client has sent too many requests",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "question": "What does HTTP status code 403 mean?",
+        "options": [
+          {
+            "choice": "Forbidden – server understood request but refuses to authorize it",
+            "is_correct": true
+          },
+          {
+            "choice": "Unauthorized – authentication is required",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Found – resource could not be found",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "question": "What does HTTP status code 404 mean?",
+        "options": [
+          {
+            "choice": "Not Found – the requested resource could not be found",
+            "is_correct": true
+          },
+          {
+            "choice": "Gone – resource is no longer available",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "question": "What does HTTP status code 405 mean?",
+        "options": [
+          {
+            "choice": "Method Not Allowed – request method is known but not supported by resource",
+            "is_correct": true
+          },
+          {
+            "choice": "Not Acceptable – resource cannot generate content acceptable by client",
+            "is_correct": false
+          },
+          {
+            "choice": "Conflict – request could not be completed due to conflict",
+            "is_correct": false
+          },
+          {
+            "choice": "Payload Too Large – request entity is larger than limits",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "question": "What does HTTP status code 406 mean?",
+        "options": [
+          {
+            "choice": "Not Acceptable – server cannot generate content acceptable by client",
+            "is_correct": true
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses to accept request body format",
+            "is_correct": false
+          },
+          {
+            "choice": "Precondition Failed – a precondition given by client failed",
+            "is_correct": false
+          },
+          {
+            "choice": "Expectation Failed – server cannot meet Expect header requirements",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "question": "What does HTTP status code 407 mean?",
+        "options": [
+          {
+            "choice": "Proxy Authentication Required – client must authenticate with proxy",
+            "is_correct": true
+          },
+          {
+            "choice": "Unauthorized – authentication is required",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          },
+          {
+            "choice": "Payment Required – reserved for future use",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "question": "What does HTTP status code 408 mean?",
+        "options": [
+          {
+            "choice": "Request Timeout – client did not produce a request within the time server was prepared to wait",
+            "is_correct": true
+          },
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out waiting for upstream server",
+            "is_correct": false
+          },
+          {
+            "choice": "Too Early – server is unwilling to risk processing",
+            "is_correct": false
+          },
+          {
+            "choice": "Service Unavailable – server is currently unable to handle request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "question": "What does HTTP status code 409 mean?",
+        "options": [
+          {
+            "choice": "Conflict – request could not be completed due to conflict with current state",
+            "is_correct": true
+          },
+          {
+            "choice": "Gone – resource is no longer available",
+            "is_correct": false
+          },
+          {
+            "choice": "Precondition Required – server requires request to be conditional",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "question": "What does HTTP status code 410 mean?",
+        "options": [
+          {
+            "choice": "Gone – resource is no longer available and will not be available again",
+            "is_correct": true
+          },
+          {
+            "choice": "Not Found – resource could not be found",
+            "is_correct": false
+          },
+          {
+            "choice": "Multiple Choices – there are multiple options for the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "No Content – server processed request; no content to return",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "question": "What does HTTP status code 411 mean?",
+        "options": [
+          {
+            "choice": "Length Required – server refuses request without Content-Length header",
+            "is_correct": true
+          },
+          {
+            "choice": "Precondition Failed – a condition given in request header fields failed",
+            "is_correct": false
+          },
+          {
+            "choice": "Payload Too Large – request entity is larger than limits",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Acceptable – server cannot generate acceptable content",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "question": "What does HTTP status code 412 mean?",
+        "options": [
+          {
+            "choice": "Precondition Failed – one or more preconditions given in request header fields evaluated to false",
+            "is_correct": true
+          },
+          {
+            "choice": "Expectation Failed – server cannot meet Expect header requirements",
+            "is_correct": false
+          },
+          {
+            "choice": "Length Required – server refuses without Content-Length header",
+            "is_correct": false
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses request body format",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "question": "What does HTTP status code 413 mean?",
+        "options": [
+          {
+            "choice": "Payload Too Large – request entity is larger than limits defined by server",
+            "is_correct": true
+          },
+          {
+            "choice": "Request Entity Too Large – deprecated name for 413",
+            "is_correct": false
+          },
+          {
+            "choice": "URI Too Long – request URI is too long",
+            "is_correct": false
+          },
+          {
+            "choice": "Request Header Fields Too Large – headers too large",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "question": "What does HTTP status code 414 mean?",
+        "options": [
+          {
+            "choice": "URI Too Long – request URI is longer than server can handle",
+            "is_correct": true
+          },
+          {
+            "choice": "Payload Too Large – request entity is larger than server limits",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses request body format",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "question": "What does HTTP status code 415 mean?",
+        "options": [
+          {
+            "choice": "Unsupported Media Type – server refuses to accept request body format",
+            "is_correct": true
+          },
+          {
+            "choice": "Not Acceptable – server cannot generate acceptable content",
+            "is_correct": false
+          },
+          { "choice": "Unsupported Format – deprecated", "is_correct": false },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "question": "What does HTTP status code 416 mean?",
+        "options": [
+          {
+            "choice": "Range Not Satisfiable – client asked for a portion of the file not available",
+            "is_correct": true
+          },
+          {
+            "choice": "Partial Content – server is delivering part of the resource",
+            "is_correct": false
+          },
+          {
+            "choice": "Requested Range Not Satisfiable – deprecated name for 416",
+            "is_correct": false
+          },
+          {
+            "choice": "Precondition Failed – a precondition given in header fields failed",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "question": "What does HTTP status code 417 mean?",
+        "options": [
+          {
+            "choice": "Expectation Failed – server cannot meet the requirements of the Expect header",
+            "is_correct": true
+          },
+          {
+            "choice": "Precondition Failed – one or more preconditions given in header fields evaluated to false",
+            "is_correct": false
+          },
+          {
+            "choice": "Failed Dependency – request failed due to failure of a previous request",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "question": "What does HTTP status code 418 mean?",
+        "options": [
+          {
+            "choice": "I'm a Teapot – April Fools’ joke; server refuses to brew coffee in teapot",
+            "is_correct": true
+          },
+          {
+            "choice": "Unprocessable Entity – server understands request but cannot process instructions",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          },
+          { "choice": "Impossible Teapot – deprecated", "is_correct": false }
+        ]
+      },
+      {
+        "id": 43,
+        "question": "What does HTTP status code 421 mean?",
+        "options": [
+          {
+            "choice": "Misdirected Request – request was directed at a server that is not able to produce a response",
+            "is_correct": true
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Failed Dependency – request failed due to failure of a previous request",
+            "is_correct": false
+          },
+          {
+            "choice": "Network Authentication Required – client needs to authenticate to gain network access",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "question": "What does HTTP status code 422 mean?",
+        "options": [
+          {
+            "choice": "Unprocessable Entity – server understands request but cannot process instructions",
+            "is_correct": true
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses to accept request body format",
+            "is_correct": false
+          },
+          {
+            "choice": "Expectation Failed – server cannot meet Expect header requirements",
+            "is_correct": false
+          },
+          {
+            "choice": "Too Early – server is unwilling to risk processing",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "question": "What does HTTP status code 423 mean?",
+        "options": [
+          {
+            "choice": "Locked – the resource that is being accessed is locked",
+            "is_correct": true
+          },
+          {
+            "choice": "Conflict – request could not be completed due to conflict",
+            "is_correct": false
+          },
+          {
+            "choice": "Locked Resource – deprecated name for 423",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "question": "What does HTTP status code 424 mean?",
+        "options": [
+          {
+            "choice": "Failed Dependency – request failed due to failure of a previous request",
+            "is_correct": true
+          },
+          {
+            "choice": "Precondition Failed – one or more preconditions given in header fields failed",
+            "is_correct": false
+          },
+          {
+            "choice": "Loop Detected – server detected an infinite loop",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "question": "What does HTTP status code 425 mean?",
+        "options": [
+          {
+            "choice": "Too Early – server is unwilling to risk processing a request that might be replayed",
+            "is_correct": true
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Request Timeout – client did not produce a request within the time server was prepared to wait",
+            "is_correct": false
+          },
+          {
+            "choice": "Precondition Required – server requires request to be conditional",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "question": "What does HTTP status code 426 mean?",
+        "options": [
+          {
+            "choice": "Upgrade Required – client should switch to a different protocol",
+            "is_correct": true
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          },
+          {
+            "choice": "Switching Protocols – server is switching protocols",
+            "is_correct": false
+          },
+          { "choice": "Not Supported – deprecated", "is_correct": false }
+        ]
+      },
+      {
+        "id": 49,
+        "question": "What does HTTP status code 428 mean?",
+        "options": [
+          {
+            "choice": "Precondition Required – server requires request to be conditional",
+            "is_correct": true
+          },
+          {
+            "choice": "Precondition Failed – one or more preconditions given in header fields failed",
+            "is_correct": false
+          },
+          {
+            "choice": "Expectation Failed – server cannot meet Expect header requirements",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "question": "What does HTTP status code 429 mean?",
+        "options": [
+          {
+            "choice": "Too Many Requests – user has sent too many requests in a given amount of time",
+            "is_correct": true
+          },
+          {
+            "choice": "Service Unavailable – server is currently unavailable",
+            "is_correct": false
+          },
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out",
+            "is_correct": false
+          },
+          {
+            "choice": "Request Timeout – client did not produce a request in time",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "question": "What does HTTP status code 431 mean?",
+        "options": [
+          {
+            "choice": "Request Header Fields Too Large – server is unwilling to process request because headers are too large",
+            "is_correct": true
+          },
+          {
+            "choice": "Payload Too Large – request entity is larger than limits",
+            "is_correct": false
+          },
+          {
+            "choice": "URI Too Long – request URI is longer than server can handle",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Request – server could not understand request",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "question": "What does HTTP status code 451 mean?",
+        "options": [
+          {
+            "choice": "Unavailable For Legal Reasons – server is denying access due to legal demands",
+            "is_correct": true
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Found – resource could not be found",
+            "is_correct": false
+          },
+          {
+            "choice": "Payment Required – reserved for future use",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "question": "What does HTTP status code 500 mean?",
+        "options": [
+          {
+            "choice": "Internal Server Error – generic server error when no more specific message is suitable",
+            "is_correct": true
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Service Unavailable – server is currently unavailable",
+            "is_correct": false
+          },
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "question": "What does HTTP status code 501 mean?",
+        "options": [
+          {
+            "choice": "Not Implemented – server does not support the functionality required to fulfill the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          },
+          {
+            "choice": "Service Unavailable – server is currently unavailable",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "question": "What does HTTP status code 502 mean?",
+        "options": [
+          {
+            "choice": "Bad Gateway – server received an invalid response from the upstream server",
+            "is_correct": true
+          },
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          },
+          {
+            "choice": "Service Unavailable – server is currently unavailable",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "question": "What does HTTP status code 503 mean?",
+        "options": [
+          {
+            "choice": "Service Unavailable – server is currently unable to handle the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "question": "What does HTTP status code 504 mean?",
+        "options": [
+          {
+            "choice": "Gateway Timeout – server acting as gateway timed out waiting for upstream server",
+            "is_correct": true
+          },
+          {
+            "choice": "Request Timeout – client did not produce a request in time",
+            "is_correct": false
+          },
+          {
+            "choice": "Bad Gateway – server received an invalid response from upstream",
+            "is_correct": false
+          },
+          {
+            "choice": "Service Unavailable – server is currently unavailable",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "question": "What does HTTP status code 505 mean?",
+        "options": [
+          {
+            "choice": "HTTP Version Not Supported – server does not support requested HTTP protocol version",
+            "is_correct": true
+          },
+          {
+            "choice": "Not Implemented – server does not recognize request method",
+            "is_correct": false
+          },
+          {
+            "choice": "Upgrade Required – client should switch to a different protocol",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "question": "What does HTTP status code 506 mean?",
+        "options": [
+          {
+            "choice": "Variant Also Negotiates – transparent content negotiation for the request results in a circular reference",
+            "is_correct": true
+          },
+          {
+            "choice": "Loop Detected – server detected an infinite loop",
+            "is_correct": false
+          },
+          {
+            "choice": "Multi-Status – multiple separate responses",
+            "is_correct": false
+          },
+          {
+            "choice": "Not Extended – further extensions to the request are required",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "question": "What does HTTP status code 507 mean?",
+        "options": [
+          {
+            "choice": "Insufficient Storage – server is unable to store the representation needed to complete the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Failed Dependency – request failed due to failure of a previous request",
+            "is_correct": false
+          },
+          {
+            "choice": "Loop Detected – server detected an infinite loop",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "question": "What does HTTP status code 508 mean?",
+        "options": [
+          {
+            "choice": "Loop Detected – server detected an infinite loop while processing the request",
+            "is_correct": true
+          },
+          {
+            "choice": "Failed Dependency – request failed due to failure of a previous request",
+            "is_correct": false
+          },
+          {
+            "choice": "Internal Server Error – generic server error",
+            "is_correct": false
+          },
+          {
+            "choice": "Variant Also Negotiates – circular reference in content negotiation",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "question": "What does HTTP status code 510 mean?",
+        "options": [
+          {
+            "choice": "Not Extended – further extensions to the request are required for the server to fulfill it",
+            "is_correct": true
+          },
+          {
+            "choice": "Upgrade Required – client should switch to a different protocol",
+            "is_correct": false
+          },
+          {
+            "choice": "Unsupported Media Type – server refuses to accept request body format",
+            "is_correct": false
+          },
+          {
+            "choice": "501 Not Implemented – server lacks functionality",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "question": "What does HTTP status code 511 mean?",
+        "options": [
+          {
+            "choice": "Network Authentication Required – client needs to authenticate to gain network access",
+            "is_correct": true
+          },
+          {
+            "choice": "Proxy Authentication Required – client must authenticate with proxy",
+            "is_correct": false
+          },
+          {
+            "choice": "Unauthorized – authentication is required",
+            "is_correct": false
+          },
+          {
+            "choice": "Forbidden – server refuses to authorize request",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
   }
 ]
